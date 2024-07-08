@@ -101,7 +101,7 @@ Create cloudfront distribution
 
 ---> create distribution
 
----> copy cloudfront policy , go to s3 bucket , block public access and paste policy
+---> copy cloudfront policy , go to s3 bucket ,  paste policy and block public access 
 
 ##### Now test again 👍⛳
 
