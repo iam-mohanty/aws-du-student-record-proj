@@ -2,13 +2,23 @@
 
 ## aws services :- lambda, s3, dynamodb, api gateway, iam , cloudfront ( ohio )
 
-### steps
+### step-1 :-
 
-1. Create dynamoDB table
+Create dynamoDB table
 
-2. Create IAM role for lambda
+```sh
+studentData
+```
 
-3. Create lambda function and update code
+partition key
+
+```sh
+studentid
+```
+
+3. Create IAM role for lambda
+
+4. Create lambda function and update code
    
 ---> lambada function = insertStudentData  , run time = python 3.12 , apply new role  , upload code
 
