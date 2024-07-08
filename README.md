@@ -1,6 +1,6 @@
 # serverless-DU-student-data
 
-## aws services :- lambda, s3, dynamodb, api gateway, iam , cloudfront ( ohio )
+## aws services :- lambda, s3, dynamodb, api gateway, iam , cloudfront , route53 ( ohio )
 
 ### step-1 :-
 
