@@ -26,7 +26,9 @@ policy
 
 ```sh
 AmazonDynamoDBFullAccess
+```
 
+```sh
 CloudWatchFullAccess
 ```
 
