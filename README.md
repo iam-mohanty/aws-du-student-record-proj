@@ -58,15 +58,40 @@ run time = python 3.12  ---->  apply new role  ---->  upload code
 
 Create API Gateway
 
-5. Create s3 bucket
+open REST API --->  new api
 
-6. Test this 👇😎
+```sh
+student
+```
 
-copy bucket website endpoint  ,  http://devbucket2024project.s3-website.ap-south-1.amazonaws.com
+create method ---> method type = POST , integration type ---> lambda function (insertStudentData)
 
-paste it on browser
+create method ---> method type = GET , integration type ---> lambda function (getstudent)
 
-7. Create cloudfront distribution
+goto resources and enable cors  ---->  select GET & POST and save
+
+deploy api  --->  stage = new stage --->  name = prod ---> deploy
+
+copy invoke url and paste it on script.js
+
+
+### step-5 :-
+
+Create s3 bucket
+
+unblock public access  ---->  upload index.html and script.js file
+
+go to properties ----> enable static website hosting
+
+go to permission and attach bucket policy
+
+##### Test this 👇😎
+
+copy bucket website endpoint  ,  http://devbucket2024project.s3-website.ap-south-1.amazonaws.com  & paste it on browser
+
+### step-6 :-
+
+Create cloudfront distribution
 
 ---> Origin domain = s3bucketurl
 
@@ -78,6 +103,6 @@ paste it on browser
 
 ---> copy cloudfront policy , go to s3 bucket , block public access and paste policy
 
-9. Now test again 👍⛳
+##### Now test again 👍⛳
 
 copy cloudfront " Distribution domain name "
