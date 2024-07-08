@@ -16,16 +16,45 @@ partition key
 studentid
 ```
 
-3. Create IAM role for lambda
+### step-2 :-
 
-4. Create lambda function and update code
+Create IAM role for lambda
+
+AWS service = lambda
+
+policy
+
+```sh
+AmazonDynamoDBFullAccess
+
+CloudWatchFullAccess
+```
+
+role name = du_student_lambada_role
+
+### step-3 :-
+
+Create lambda function and update code
    
----> lambada function = insertStudentData  , run time = python 3.12 , apply new role  , upload code
+#### lambada function-1
 
----> lambada function = getstudentdata  , run time = python 3.12  , apply new role  , upload code
+```sh
+insertStudentData
+```
 
+run time = python 3.12  ---->  apply new role  ---->  upload code
 
-4. Create API Gateway
+#### lambada function-2
+
+```sh
+getstudentdata
+```
+
+run time = python 3.12  ---->  apply new role  ---->  upload code
+
+### step-4 :-
+
+Create API Gateway
 
 5. Create s3 bucket
 
